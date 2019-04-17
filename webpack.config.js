@@ -17,8 +17,8 @@ const config = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: ['babel-loader']
-            },
+                use: ['babel-loader', 'eslint-loader']
+            }
         ]
     },
 
@@ -28,13 +28,13 @@ const config = {
             title: 'Webpack React Starter',
             template: './src/index.html',
             filename: 'index.html',
-            hash: true,
-        }),
+            hash: true
+        })
     ],
 
     node: {
-        fs: 'empty',
-    },
+        fs: 'empty'
+    }
 };
 
 module.exports = config;
